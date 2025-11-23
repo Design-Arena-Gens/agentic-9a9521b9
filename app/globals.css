@@ -1,0 +1,256 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: #f6f8fb;
+  color: #17223b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem 1.5rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #0f172a;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 3rem;
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.metadata-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metadata-label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.metadata-value {
+  font-weight: 600;
+  color: #111827;
+}
+
+.toc {
+  margin-bottom: 4rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.05);
+}
+
+.toc h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.toc li {
+  border-left: 3px solid transparent;
+  padding-left: 0.75rem;
+  transition: border-color 0.2s ease;
+}
+
+.toc li:hover {
+  border-left: 3px solid #2563eb;
+}
+
+.toc a {
+  color: #1e293b;
+  line-height: 1.35;
+}
+
+.section {
+  background: white;
+  padding: clamp(2rem, 3vw, 3rem);
+  border-radius: 18px;
+  box-shadow: 0 22px 48px rgba(15, 23, 42, 0.06);
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  color: #0f172a;
+}
+
+.section h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  color: #1e293b;
+}
+
+.section p {
+  line-height: 1.9;
+  color: #334155;
+  margin-bottom: 1.25rem;
+  font-size: 1.03rem;
+}
+
+.section ul,
+.section ol {
+  padding-left: 1.5rem;
+  color: #334155;
+}
+
+.section figure {
+  margin: 2.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.section figure figcaption {
+  font-size: 0.95rem;
+  color: #475569;
+  padding: 0.75rem 1.25rem 1.5rem 1.25rem;
+}
+
+.section figure img {
+  display: block;
+}
+
+.quote {
+  background: linear-gradient(120deg, rgba(59, 130, 246, 0.12), rgba(14, 116, 144, 0.12));
+  border-left: 4px solid #2563eb;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  font-style: italic;
+  color: #1e293b;
+}
+
+.highlight {
+  background: #fef3c7;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.callout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  background: #0f172a;
+  color: white;
+  padding: 2.5rem;
+  border-radius: 18px;
+  margin-top: 3rem;
+}
+
+.callout h3 {
+  margin: 0;
+  color: #f8fafc;
+}
+
+.annexes {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.08);
+  margin-bottom: 4rem;
+}
+
+.annexes h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+}
+
+.annex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.annex-card {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 14px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #f8fafc;
+}
+
+.annex-card h3 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.footer {
+  text-align: center;
+  color: #475569;
+  font-size: 0.95rem;
+  padding: 4rem 0 2rem 0;
+}
+
+code {
+  background: rgba(15, 23, 42, 0.08);
+  padding: 0.2rem 0.35rem;
+  border-radius: 4px;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.95rem;
+}
+
+pre {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
